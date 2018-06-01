@@ -2,7 +2,7 @@
 
 Pdf to image converter via pdftoppm tool
 
-### Convert all pdf to page by page images
+### Convert whole pdf file to page by page images
 
 ```bash
 docker run -it --rm \
