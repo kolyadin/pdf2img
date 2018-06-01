@@ -1,7 +1,7 @@
-FROM debian:9-slim
+FROM alpine:3.7
 
 MAINTAINER aleksey.kolyadin@isobar.ru
 
-RUN apt-get update && apt-get install -y poppler-utils
+RUN apk add --no-cache poppler-utils
 
 WORKDIR /root
