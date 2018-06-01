@@ -1,6 +1,6 @@
 # About
 
-Simple pdf to image converter via pdftoppm tool
+Pdf to image converter via pdftoppm tool
 
 ### Convert all pdf to page by page images
 
