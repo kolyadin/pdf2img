@@ -8,8 +8,7 @@ Pdf to image converter via pdftoppm tool
 docker run -it --rm \
     -v $(pwd)/file.pdf:/var/workdir/input.pdf \
     -v $(pwd)/pdf-output/:/var/workdir/output/ \
-    kolyadin/pdf2img \
-    pdftoppm -png -q input.pdf output/page
+    kolyadin/pdf2img -png -q input.pdf output/page
 ```
 
 ### Convert only one page #10 from pdf
@@ -18,8 +17,7 @@ docker run -it --rm \
 docker run -it --rm \
     -v $(pwd)/file.pdf:/var/workdir/input.pdf \
     -v $(pwd)/pdf-output/:/var/workdir/output/ \
-    kolyadin/pdf2img \
-    pdftoppm -jpeg -q -f 10 -singlefile input.pdf output/page
+    kolyadin/pdf2img -jpeg -q -f 10 -singlefile input.pdf output/page
 ```
 
 ### All pdftoppm options

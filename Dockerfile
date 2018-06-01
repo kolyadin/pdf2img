@@ -10,5 +10,11 @@ RUN set -x ; \
 
 RUN mkdir /var/workdir && chown www-data:www-data /var/workdir
 
+COPY entrypoint.sh /
+RUN chmod +x /entrypoint.sh
+
 USER www-data
 WORKDIR /var/workdir
+
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["--help"]
